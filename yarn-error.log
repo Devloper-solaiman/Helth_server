@@ -1,0 +1,60 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js build
+
+PATH: 
+  C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Users\DK USER\AppData\Local\Microsoft\WindowsApps;C:\Users\DK USER\AppData\Roaming\npm;;C:\Program Files\MongoDB\Server\7.0\bin;C:\Users\DK USER\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\DK USER\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.11.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  TypeError [ERR_INVALID_ARG_VALUE]: The property 'options.env['npm_package_description']' must be a string without null bytes. Received '\x00'
+      at validateArgumentNullCheck (node:child_process:973:11)
+      at normalizeSpawnArguments (node:child_process:700:7)
+      at Object.spawn (node:child_process:754:13)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:25732:24
+      at new Promise (<anonymous>)
+      at new F (C:\Program Files (x86)\Yarn\lib\cli.js:5305:28)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:25729:12
+      at run (C:\Program Files (x86)\Yarn\lib\cli.js:43184:7)
+      at BlockingQueue.maybePushConcurrencyQueue (C:\Program Files (x86)\Yarn\lib\cli.js:43199:7)
+      at BlockingQueue.shift (C:\Program Files (x86)\Yarn\lib\cli.js:43194:10)
+
+npm manifest: 
+  {
+    "name": "frontend-assignment-server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev": "nodemon index.js",
+      "start": "node index.js",
+      "build": "tsc"
+    },
+    "author": "Programming Hero",
+    "license": "ISC",
+    "dependencies": {
+      "@types/node": "^20.11.24",
+      "bcrypt": "^5.1.1",
+      "cors": "^2.8.5",
+      "dotenv": "^16.4.4",
+      "express": "^4.18.2",
+      "jsonwebtoken": "^9.0.2",
+      "mongodb": "^6.3.0",
+      "nodemon": "^3.0.3",
+      "typescript": "^5.3.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
